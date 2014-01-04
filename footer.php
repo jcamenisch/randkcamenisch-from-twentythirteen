@@ -5,8 +5,8 @@
  * Contains footer content and the closing of the #main and #page div elements.
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage Randkcamenisch_Twenty_Thirteen
+ * @since R & Camenisch: Twenty Thirteen 0.1
  */
 ?>
 

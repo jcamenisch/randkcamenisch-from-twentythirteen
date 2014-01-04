@@ -5,8 +5,8 @@
  * @link http://codex.wordpress.org/Custom_Headers
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage Randkcamenisch_Twenty_Thirteen
+ * @since R & Camenisch: Twenty Thirteen 0.1
  */
 
 /**
@@ -18,7 +18,7 @@
  * @uses twentythirteen_admin_header_image() to add custom markup to wp-admin form.
  * @uses register_default_headers() to set up the bundled header images.
  *
- * @since Twenty Thirteen 1.0
+ * @since R & Camenisch: Twenty Thirteen 0.1
  *
  * @return void
  */
@@ -48,17 +48,17 @@ function twentythirteen_custom_header_setup() {
 		'circle' => array(
 			'url'           => '%s/images/headers/circle.png',
 			'thumbnail_url' => '%s/images/headers/circle-thumbnail.png',
-			'description'   => _x( 'Circle', 'header image description', 'twentythirteen' )
+			'description'   => _x( 'Circle', 'header image description', 'randkcamenisch-twentythirteen' )
 		),
 		'diamond' => array(
 			'url'           => '%s/images/headers/diamond.png',
 			'thumbnail_url' => '%s/images/headers/diamond-thumbnail.png',
-			'description'   => _x( 'Diamond', 'header image description', 'twentythirteen' )
+			'description'   => _x( 'Diamond', 'header image description', 'randkcamenisch-twentythirteen' )
 		),
 		'star' => array(
 			'url'           => '%s/images/headers/star.png',
 			'thumbnail_url' => '%s/images/headers/star-thumbnail.png',
-			'description'   => _x( 'Star', 'header image description', 'twentythirteen' )
+			'description'   => _x( 'Star', 'header image description', 'randkcamenisch-twentythirteen' )
 		),
 	) );
 }
@@ -67,13 +67,13 @@ add_action( 'after_setup_theme', 'twentythirteen_custom_header_setup', 11 );
 /**
  * Load our special font CSS files.
  *
- * @since Twenty Thirteen 1.0
+ * @since R & Camenisch: Twenty Thirteen 0.1
  *
  * @return void
  */
 function twentythirteen_custom_header_fonts() {
 	// Add Source Sans Pro and Bitter fonts.
-	wp_enqueue_style( 'twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
+	wp_enqueue_style( 'randkcamenisch-twentythirteen-fonts', twentythirteen_fonts_url(), array(), null );
 
 	// Add Genericons font.
 	wp_enqueue_style( 'genericons', get_template_directory_uri() . '/fonts/genericons.css', array(), '2.09' );
@@ -85,7 +85,7 @@ add_action( 'admin_print_styles-appearance_page_custom-header', 'twentythirteen_
  *
  * get_header_textcolor() options: Hide text (returns 'blank'), or any hex value.
  *
- * @since Twenty Thirteen 1.0
+ * @since R & Camenisch: Twenty Thirteen 0.1
  *
  * @return void
  */
@@ -99,7 +99,7 @@ function twentythirteen_header_style() {
 
 	// If we get this far, we have custom styles.
 	?>
-	<style type="text/css" id="twentythirteen-header-css">
+	<style type="text/css" id="randkcamenisch-twentythirteen-header-css">
 	<?php
 		if ( ! empty( $header_image ) ) :
 	?>
@@ -143,14 +143,14 @@ function twentythirteen_header_style() {
 /**
  * Style the header image displayed on the Appearance > Header admin panel.
  *
- * @since Twenty Thirteen 1.0
+ * @since R & Camenisch: Twenty Thirteen 0.1
  *
  * @return void
  */
 function twentythirteen_admin_header_style() {
 	$header_image = get_header_image();
 ?>
-	<style type="text/css" id="twentythirteen-admin-header-css">
+	<style type="text/css" id="randkcamenisch-twentythirteen-admin-header-css">
 	.appearance_page_custom-header #headimg {
 		border: none;
 		-webkit-box-sizing: border-box;
@@ -211,7 +211,7 @@ function twentythirteen_admin_header_style() {
  *
  * This callback overrides the default markup displayed there.
  *
- * @since Twenty Thirteen 1.0
+ * @since R & Camenisch: Twenty Thirteen 0.1
  *
  * @return void
  */

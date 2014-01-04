@@ -3,7 +3,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Twenty Thirteen 1.1\n"
-"Report-Msgid-Bugs-To: http://wordpress.org/tags/twentythirteen\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/randkcamenisch-twentythirteen\n"
 "POT-Creation-Date: 2013-10-24 20:32:06+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -145,7 +145,7 @@ msgid ""
 "searching can help."
 msgstr ""
 
-#. #-#-#-#-#  twentythirteen.pot (Twenty Thirteen 1.1)  #-#-#-#-#
+#. #-#-#-#-#  randkcamenisch-twentythirteen.pot (Twenty Thirteen 1.1)  #-#-#-#-#
 #. Author URI of the plugin/theme
 #: footer.php:19
 msgid "http://wordpress.org/"
@@ -312,11 +312,11 @@ msgid "%s Archives"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Twenty Thirteen"
+msgid "Randkcamenisch Twenty Thirteen"
 msgstr ""
 
 #. Theme URI of the plugin/theme
-msgid "http://wordpress.org/themes/twentythirteen"
+msgid "http://wordpress.org/themes/randkcamenisch-twentythirteen"
 msgstr ""
 
 #. Description of the plugin/theme

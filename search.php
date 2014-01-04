@@ -3,8 +3,8 @@
  * The template for displaying Search Results pages
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage Randkcamenisch_Twenty_Thirteen
+ * @since R & Camenisch: Twenty Thirteen 0.1
  */
 
 get_header(); ?>
@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 
 			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'twentythirteen' ), get_search_query() ); ?></h1>
+				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'randkcamenisch-twentythirteen' ), get_search_query() ); ?></h1>
 			</header>
 
 			<?php /* The loop */ ?>
