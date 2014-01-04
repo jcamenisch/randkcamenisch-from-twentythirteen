@@ -546,3 +546,70 @@ function twentythirteen_customize_preview_js() {
 	wp_enqueue_script( 'randkcamenisch-twentythirteen-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130226', true );
 }
 add_action( 'customize_preview_init', 'twentythirteen_customize_preview_js' );
+
+/**
+ * Use Advance Custom Fields plugin to add page options to sidebar during page editing.
+ */
+include_once('advanced-custom-fields/acf.php');
+
+if(function_exists("register_field_group"))
+{
+	register_field_group(array (
+		'id' => 'acf_page-options',
+		'title' => 'Page Options',
+		'fields' => array (
+			array (
+				'key' => 'field_52c78bfd90c4d',
+				'label' => 'Show in Menu',
+				'name' => 'show_in_menu',
+				'type' => 'radio',
+				'instructions' => 'Select a navigation menu in which to display a link to this page',
+				'required' => 1,
+				'choices' => array (
+					'Main' => 'Main',
+					'Meta' => 'Meta',
+					'Resource' => 'Resource',
+					'None' => 'None',
+				),
+				'other_choice' => 0,
+				'save_other_choice' => 0,
+				'default_value' => 'None',
+				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_52c78db081f3a',
+				'label' => 'Show Sidebar Items',
+				'name' => 'show_sidebar_items',
+				'type' => 'true_false',
+				'message' => '',
+				'default_value' => 1,
+			),
+			array (
+				'key' => 'field_52c78dd081f3b',
+				'label' => 'Show Testimonial',
+				'name' => 'show_testimonial',
+				'type' => 'true_false',
+				'message' => '',
+				'default_value' => 1,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'default',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'side',
+			'layout' => 'default',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+}
