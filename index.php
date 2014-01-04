@@ -21,71 +21,75 @@
 <html class="ie ie8" <?php language_attributes(); ?>>
 <![endif]-->
 <!--[if !(IE 7) | !(IE 8)  ]><!-->
-<html <?php language_attributes(); ?>>
+<html <? language_attributes(); ?>>
 <!--<![endif]-->
-<head>
-  <meta charset="<?php bloginfo( 'charset' ); ?>">
-  <meta name="viewport" content="width=device-width">
-  <title><?php wp_title( '|', true, 'right' ); ?></title>
-  <link rel="profile" href="http://gmpg.org/xfn/11">
-  <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-  <!--[if lt IE 9]>
-  <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
-  <![endif]-->
-  <?php wp_head(); ?>
-</head>
+  <head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <title><? wp_title( '|', true, 'right' ); /* <r:title /> */ ?></title>
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <meta name="description" content="<? /* <r:field name="Description" /> */ ?>" />
+    <link href="http://feeds.feedburner.com/kaycamenisch" rel="alternate" title="RSS" type="application/rss+xml" />
+    <link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 7]><style type="text/css" media="screen">@import url("/stylesheets/ie6-.css");</style><![endif]-->
+    <!--[if lt IE 9]>
+      <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+      <style type="text/css" media="screen">@import url("/stylesheets/ie8-.css");</style>
+    <![endif]-->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    <?php wp_head(); ?>
+  </head>
 
-<body <?php body_class(); ?>>
-	<div id="page" class="hfeed site">
-		<header id="masthead" class="site-header" role="banner">
-			<a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-				<h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
-				<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-			</a>
+  <body class="<? body_class(); /* <r:slug /> */ ?>">
+    <div class="wrapper">
+      <div class="header-wrapper">
+        <div class="header">
+          <h1>
+            <a href="/" title="Return to Home page">
+              <span class="randk">Robert &amp; Kay</span>
+              <span class="camenisch">Camenisch</span>
+            </a>
+            <span class="tagline">encouraging and equipping relationships</span>
+          </h1>
+        </div>
+      </div>
+      <div class="nav-wrapper">
+        <div class="nav">
+          <? get_template_part('partials/home_link_navigation'); ?>
+          <? /* <r:find url="/"> */ ?><? get_template_part('partials/main_menu'); ?><? /* </r:find> */ ?>
 
-			<div id="navbar" class="navbar">
-				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
-					<h3 class="menu-toggle"><?php _e( 'Menu', 'twentythirteen' ); ?></h3>
-					<a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
-					<?php get_search_form(); ?>
-				</nav><!-- #site-navigation -->
-			</div><!-- #navbar -->
-		</header><!-- #masthead -->
-
-		<div id="main" class="site-main">
-
-			<div id="primary" class="content-area">
-				<div id="content" class="site-content" role="main">
-				<?php if ( have_posts() ) : ?>
-
-					<?php /* The loop */ ?>
-					<?php while ( have_posts() ) : the_post(); ?>
-						<?php get_template_part( 'content', get_post_format() ); ?>
-					<?php endwhile; ?>
-
-					<?php twentythirteen_paging_nav(); ?>
-
-				<?php else : ?>
-					<?php get_template_part( 'content', 'none' ); ?>
-				<?php endif; ?>
-
-				</div>
-			</div><!-- #primary --><!-- #content -->
-
-			<?php get_sidebar(); ?>
-		</div><!-- #main -->
-
-		<footer id="colophon" class="site-footer" role="contentinfo">
-			<?php get_sidebar( 'main' ); ?>
-
-			<div class="site-info">
-				<?php do_action( 'twentythirteen_credits' ); ?>
-				<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'twentythirteen' ) ); ?>" title="<?php esc_attr_e( 'Semantic Personal Publishing Platform', 'twentythirteen' ); ?>"><?php printf( __( 'Proudly powered by %s', 'twentythirteen' ), 'WordPress' ); ?></a>
-			</div><!-- .site-info -->
-		</footer><!-- #colophon -->
-	</div><!-- #page -->
-
-	<?php wp_footer(); ?>
+          <?/* From twentythirteen's index.php */?>
+          <a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
+          <? _e( 'Menu', 'twentythirteen' ); ?>
+          <? wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+        </div>
+      </div>
+      <div class="page">
+        <div class="main">
+          <div class="content-wrapper">
+            <div class="content">
+              <? get_template_part('partials/content'); ?>
+            </div>
+            <? get_template_part('partials/sidebar'); ?>
+          </div>
+          <div style="clear: both"></div>
+        </div>
+      </div>
+      <div class="footer-wrapper">
+        <div class="footer">
+          <? get_template_part('partials/home_link_navigation'); ?>
+          <? get_template_part('partials/resource_navigation'); ?>
+          <? get_template_part('partials/meta_navigation'); ?>
+          <ul><? /* <r:navigation urls="Site Map: /sitemap|RSS: //feeds.feedburner.com/kaycamenisch"> */ ?>
+            <? get_template_part('partials/navigation_li_link'); ?>
+          <? /* </r:navigation> */ ?></ul>
+          <p>Copyright &copy; <? /* <r:date format="%Y" for="now" /> */ ?> Robert &amp; Kay Camenisch. All rights reserved. Design by <a href="http://camenischcreative.com">Camenisch Creative</a></p>
+        </div>
+      </div>
+    </div>
+    <? /* <r:if_field name="javascriptfile"> */ ?><script type="text/javascript" src="<? /* <r:field name="javascriptfile" /> */ ?>"></script><? /* </r:if_field> */ ?>
+    <? /* <r:if_content part="javascript"> */ ?><script type="text/javascript">
+      <? /* <r:content part="javascript" /> */ ?>
+    </script><? /* </r:if_content> */ ?>
+  <? wp_footer(); ?>
 </body>
 </html>
