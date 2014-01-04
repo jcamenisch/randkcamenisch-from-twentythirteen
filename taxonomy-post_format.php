@@ -9,8 +9,8 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage Twenty_Thirteen
- * @since Twenty Thirteen 1.0
+ * @subpackage Randkcamenisch_Twenty_Thirteen
+ * @since R & Camenisch: Twenty Thirteen 0.1
  */
 
 get_header(); ?>
@@ -20,7 +20,7 @@ get_header(); ?>
 
 		<?php if ( have_posts() ) : ?>
 			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( '%s Archives', 'twentythirteen' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
+				<h1 class="archive-title"><?php printf( __( '%s Archives', 'randkcamenisch-twentythirteen' ), '<span>' . get_post_format_string( get_post_format() ) . '</span>' ); ?></h1>
 			</header><!-- .archive-header -->
 
 			<?php /* The loop */ ?>
