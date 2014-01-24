@@ -556,24 +556,6 @@ if(function_exists("register_field_group"))
 		'title' => 'Page Options',
 		'fields' => array (
 			array (
-				'key' => 'field_52c78bfd90c4d',
-				'label' => 'Show in Menu',
-				'name' => 'show_in_menu',
-				'type' => 'radio',
-				'instructions' => 'Select a navigation menu in which to display a link to this page',
-				'required' => 1,
-				'choices' => array (
-					'Main' => 'Main',
-					'Meta' => 'Meta',
-					'Resource' => 'Resource',
-					'None' => 'None',
-				),
-				'other_choice' => 0,
-				'save_other_choice' => 0,
-				'default_value' => 'None',
-				'layout' => 'vertical',
-			),
-			array (
 				'key' => 'field_52c78db081f3a',
 				'label' => 'Show Sidebar Items',
 				'name' => 'show_sidebar_items',
