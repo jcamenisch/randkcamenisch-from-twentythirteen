@@ -95,6 +95,7 @@ function twentythirteen_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'randkcamenisch-twentythirteen' ) );
+	register_nav_menu( 'secondry', __( 'footer Menu', 'randkcamenisch-twentythirteen' ) );
 
 	/*
 	 * This theme uses a custom image size for featured images, displayed on
@@ -166,10 +167,6 @@ function twentythirteen_scripts_styles() {
 	 */
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' );
-
-	// Adds Masonry to handle vertical alignment of footer widgets.
-	if ( is_active_sidebar( 'sidebar-1' ) )
-		wp_enqueue_script( 'jquery-masonry' );
 
 	// Loads JavaScript file with functionality specific to Twenty Thirteen.
 	wp_enqueue_script( 'randkcamenisch-twentythirteen-script', get_template_directory_uri() . '/js/functions.js', array( 'jquery' ), '2013-07-18', true );

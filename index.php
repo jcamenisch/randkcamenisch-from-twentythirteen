@@ -76,12 +76,7 @@
       </div>
       <div class="footer-wrapper">
         <div class="footer">
-          <? get_template_part('partials/home_link_navigation'); ?>
-          <? get_template_part('partials/resource_navigation'); ?>
-          <? get_template_part('partials/meta_navigation'); ?>
-          <ul><? /* <r:navigation urls="Site Map: /sitemap|RSS: //feeds.feedburner.com/kaycamenisch"> */ ?>
-            <? get_template_part('partials/navigation_li_link'); ?>
-          <? /* </r:navigation> */ ?></ul>
+          <? wp_nav_menu( array( 'theme_location' => 'secondry', 'menu_class' => 'footer-menu' ) ); ?>
           <p>Copyright &copy; <? /* <r:date format="%Y" for="now" /> */ ?> Robert &amp; Kay Camenisch. All rights reserved. Design by <a href="http://camenischcreative.com">Camenisch Creative</a></p>
         </div>
       </div>

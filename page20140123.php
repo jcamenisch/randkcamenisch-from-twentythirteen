@@ -67,6 +67,21 @@
     <!--[if lt IE 9]>
 
       <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js"></script>
+      <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/calculated-attributes.js"></script>
+	<script type="text/javascript">
+      $(function(){
+  $('body').CalculatedAttributes();
+});
+      var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1087558-4']);
+_gaq.push(['_setDomainName', '.randkcamenisch.com']);
+_gaq.push(['_trackPageview']);
+(function(d) {
+  var ga = d.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == d.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})(document);
+    </script>
 
       <style type="text/css" media="screen">@import url("/stylesheets/ie8-.css");</style>
 
@@ -136,15 +151,43 @@
 
             <div class="content">
 
-					<h2><?php _e( 'Uh Oh', 'randkcamenisch-twentythirteen' ); ?></h2>
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'randkcamenisch-twentythirteen' ); ?></p>
+			<?php /* The loop */ ?>
+			<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_search_form(); ?>
-				<div style="clear: both"></div>
+				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+					<header class="entry-header">
+						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
+						<div class="entry-thumbnail">
+							<?php the_post_thumbnail(); ?>
+						</div>
+						<?php endif; ?>
 
-      </div>
-      </div>
-      </div>
+						<h1 class="entry-title"><?php the_title(); ?></h1>
+					</header><!-- .entry-header -->
+
+					<div class="entry-content">
+						<?php the_content(); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'randkcamenisch-twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+					</div><!-- .entry-content -->
+
+					<footer class="entry-meta">
+						<?php edit_post_link( __( 'Edit', 'randkcamenisch-twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
+					</footer><!-- .entry-meta -->
+				</article><!-- #post -->
+
+				<?php comments_template(); ?>
+			<?php endwhile; ?>
+
+		</div>
+
+            <? get_template_part('partials/sidebar'); ?>
+
+          </div>
+
+          <div style="clear: both"></div>
+
+        </div>
+
       </div>
 
       <div class="footer-wrapper">
@@ -174,4 +217,3 @@
 </body>
 
 </html>
-
