@@ -41,7 +41,6 @@ get_header(); ?>
 								$metadata['height']
 							);
 
-							edit_post_link( __( 'Edit', 'randkcamenisch-twentythirteen' ), '<span class="edit-link">', '</span>' );
 						?>
 					</div><!-- .entry-meta -->
 				</header><!-- .entry-header -->

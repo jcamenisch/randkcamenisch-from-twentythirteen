@@ -26,6 +26,5 @@
 
 	<footer class="entry-meta">
 		<?php twentythirteen_entry_meta(); ?>
-		<?php edit_post_link( __( 'Edit', 'randkcamenisch-twentythirteen' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post -->
