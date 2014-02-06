@@ -1,4 +1,4 @@
-<? if ( post_password_required() ) return; ?>
+<? if ( post_password_required() || !comments_open() ) return; ?>
 
 <div id="disqus_thread"></div>
 <script type="text/javascript">
