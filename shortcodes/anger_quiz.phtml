@@ -1,0 +1,758 @@
+<p>Take this anger quiz to evaluate the anger in your life.</p> 
+
+<form id="quiz" action="" method="post"> 
+  <fieldset id="set-a"> 
+    <h2>A</h2> 
+    <ol> 
+      <li class="question">Which symptoms do you express when you are angry?
+        <ul>                                              
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-sudden-explosions" name="symptoms-sudden-explosions" value="yes" /> 
+            <label for="symptoms-sudden-explosions">Sudden explosions</label>
+          </li>
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-sullen-silent-treatment" name="symptoms-sullen-silent-treatment" value="yes" /> 
+            <label for="symptoms-sullen-silent-treatment">Sullen, silent treatment</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-raised-voice" name="symptoms-raised-voice" value="yes" /> 
+            <label for="symptoms-raised-voice">Raised voice (shouting, yelling, screaming)</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-argue-without-listening" name="symptoms-argue-without-listening" value="yes" /> 
+            <label for="symptoms-argue-without-listening">Argue without listening</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-say-things-you-later-regret" name="symptoms-say-things-you-later-regret" value="yes" /> 
+            <label for="symptoms-say-things-you-later-regret">Say things you later regret</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-tense-face" name="symptoms-tense-jaw-face-or-neck-muscles" value="yes" /> 
+            <label for="symptoms-tense-face">Tense jaw, face, or neck muscles (grinding teeth)</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-tone-of-voice" name="symptoms-tone-of-voice" value="yes" /> 
+            <label for="symptoms-tone-of-voice">Harsh, critical, or demeaning tone of voice</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-become-irrational" name="symptoms-become-irrational" value="yes" /> 
+            <label for="symptoms-become-irrational">Become irrational</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-become-impatient" name="symptoms-become-impatient" value="yes" /> 
+            <label for="symptoms-become-impatient">Become impatient</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-become-frustrated" name="symptoms-become-frustrated" value="yes" /> 
+            <label for="symptoms-become-frustrated">Become frustrated or irritated</label>
+          </li> 
+          <li class="checkbox">
+            <input type="checkbox" id="symptoms-keep-records-of-wrongs" name="symptoms-keep-records-of-wrongs" value="yes" /> 
+            <label for="symptoms-keep-records-of-wrongs">Keep records of wrongs, and bring them back up</label></li> 
+          <li>Become violent (throw, hit, kick, slam doors . . .)
+            <ul class="checkbox symptoms-violent"> 
+              <li>
+                <input type="checkbox" id="symptoms-violent-toward-things" name="Symptoms-violent-toward-things" value="Yes" /> 
+                <label for="Symptoms-violent-toward-things">toward things</label>
+              </li> 
+              <li>
+                <input type="checkbox" id="symptoms-violent-toward-people" name="Symptoms-violent-toward-people" value="Yes" /> 
+                <label for="Symptoms-violent-toward-people">toward people</label>
+              </li> 
+            </ul> 
+          </li> 
+        </ul> 
+      </li>
+    </ol> 
+  </fieldset>
+  <fieldset id="set-b" class="b">
+    <h2>B</h2>
+    <ol start="2"> 
+      <li class="question">How often do you express anger?
+        <ol class="inline"> 
+          <li>
+            <input id="anger-frequency-rarely" type="radio" value="1" name="anger-frequency" />
+            <label for="anger-frequency-rarely">Rarely</label>
+          </li>
+          <li>
+            <input id="anger-frequency-monthly" type="radio" value="2" name="anger-frequency" />
+            <label for="anger-frequency-monthly">Monthly</label>
+          </li>
+          <li>
+            <input id="anger-frequency-weekly" type="radio" value="3" name="anger-frequency" />
+            <label for="anger-frequency-weekly">Weekly</label>
+          </li>
+          <li>
+            <input id="anger-frequency-several-times-a-week" type="radio" value="4" name="anger-frequency" />
+            <label for="anger-frequency-several-times-a-week">Several times a week</label>
+          </li>
+          <li>
+            <input id="anger-frequency-daily" type="radio" value="5" name="anger-frequency" />
+            <label for="anger-frequency-daily">Daily</label>
+          </li>
+          <li>
+            <input id="anger-frequency-several-times-a-day" type="radio" value="6" name="anger-frequency" />
+            <label for="anger-frequency-several-times-a-day">Several times a day</label>
+          </li>
+        </ol> 
+      </li> 
+      <li class="question">How often do you get mad and suppress it?
+        <ol class="inline">                                             
+          <li>
+            <input id="anger-suppression-rarely" type="radio" value="1" name="anger-suppression" />
+            <label for="anger-suppression-rarely">Rarely</label>
+          </li>
+          <li>
+            <input id="anger-suppression-monthly" type="radio" value="2" name="anger-suppression" />
+            <label for="anger-suppression-monthly">Monthly</label>
+          </li>
+          <li>
+            <input id="anger-suppression-weekly" type="radio" value="3" name="anger-suppression" />
+            <label for="anger-suppression-weekly">Weekly</label>
+          </li>
+          <li>
+            <input id="anger-suppression-several-times-a-week" type="radio" value="4" name="anger-suppression" />
+            <label for="anger-suppression-several-times-a-week">Several times a week</label>
+          </li>
+          <li>
+            <input id="anger-suppression-daily" type="radio" value="5" name="anger-suppression" />
+            <label for="anger-suppression-daily">Daily</label>
+          </li>
+          <li>
+            <input id="anger-suppression-several-times-a-day" type="radio" value="6" name="anger-suppression" />
+            <label for="anger-suppression-several-times-a-day">Several times a day</label>
+          </li>
+        </ol>                                                             
+      </li> 
+      <li class="question">
+        Who makes you mad? Rate how high your anger is toward each.<table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th></th>
+              <th class="centered">None</th>
+              <th class="centered">Slight</th>
+              <th class="centered">Significant</th>
+              <th class="centered">Extreme</th>
+            </tr>
+            <tr class="who-self">
+              <td>Self:</td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-self" value="0" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-self" value="1" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-self" value="2" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-self" value="3" /></td>
+            </tr>
+            <tr class="who-close">
+              <td>Family:</td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-family" value="0" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-family" value="1" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-family" value="2" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-family" value="3" /></td>
+            </tr>
+            <tr class="who-close">
+              <td>Close friends:</td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-close-friends" value="0" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-close-friends" value="1" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-close-friends" value="2" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-close-friends" value="3" /></td>
+            </tr>
+            <tr class="who-close">
+              <td>Co-workers:</td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-co-workers" value="0" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-co-workers" value="1" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-co-workers" value="2" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-co-workers" value="3" /></td>
+            </tr>
+            <tr class="who-other">
+              <td>Other drivers:</td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other-drivers" value="0" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other-drivers" value="1" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other-drivers" value="2" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other-drivers" value="3" /></td>
+            </tr>
+            <tr class="who-other">
+              <td>Anybody and everybody:</td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-anybody-and-everybody" value="0" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-anybody-and-everybody" value="1" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-anybody-and-everybody" value="2" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-anybody-and-everybody" value="3" /></td>
+            </tr>
+            <tr class="who-other">
+              <td>Other:</td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other" value="0" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other" value="1" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other" value="2" /></td>
+              <td class="centered"><input type="radio" name="who-makes-you-mad-other" value="3" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ol> 
+  </fieldset> 
+  <fieldset id="set-c">
+    <h2>C</h2>
+    <ol start="5">
+      <li class="question b">How often do you ask forgiveness for your anger with the following people?
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th></th>
+              <th class="centered">Never</th>
+              <th class="centered">Rarely</th>
+              <th class="centered">Sometimes</th>
+              <th class="centered">Usually</th>
+              <th class="centered">Always</th>
+            </tr>
+            <tr class="who-self">
+              <td>Self:</td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-self" value="0" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-self" value="-1" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-self" value="-2" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-self" value="-3" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-self" value="-4" /></td>
+            </tr>
+            <tr class="who-close">
+              <td>Family:</td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-family" value="0" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-family" value="-1" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-family" value="-2" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-family" value="-3" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-family" value="-4" /></td>
+            </tr>
+            <tr class="who-close">
+              <td>Close friends:</td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-close-friends" value="0" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-close-friends" value="-1" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-close-friends" value="-2" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-close-friends" value="-3" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-close-friends" value="-4" /></td>
+            </tr>
+            <tr class="who-close">
+              <td>Co-workers:</td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-co-workers" value="0" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-co-workers" value="-1" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-co-workers" value="-2" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-co-workers" value="-3" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-co-workers" value="-4" /></td>
+            </tr>
+            <tr class="who-other">
+              <td>Other drivers:</td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other-drivers" value="0" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other-drivers" value="-1" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other-drivers" value="-2" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other-drivers" value="-3" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other-drivers" value="-4" /></td>
+            </tr>
+            <tr class="who-other">
+              <td>Anybody and everybody:</td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-anybody-and-everybody" value="0" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-anybody-and-everybody" value="-1" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-anybody-and-everybody" value="-2" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-anybody-and-everybody" value="-3" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-anybody-and-everybody" value="-4" /></td>
+            </tr>
+            <tr class="who-other">
+              <td>Other:</td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other" value="0" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other" value="-1" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other" value="-2" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other" value="-3" /></td>
+              <td class="centered"><input type="radio" name="ask-forgiveness-how-often-other" value="-4" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ol> 
+  </fieldset> 
+  <fieldset id="set-d"class="destruction-level">
+    <h2>D</h2>
+    <ol start="6"> 
+      <li class="question">What level of separation does your anger cause in relationships with:
+        <table border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <th></th>
+                <th class="centered">None</th>
+                <th class="centered">Slight</th>
+                <th class="centered">Significant</th>
+                <th class="centered">Extreme</th>
+                <th class="centered">Absolute</th>
+              </tr>
+              <tr>
+                <td>Spouse or Parents:</td>
+                <td class="centered"><input type="radio" name="separation-from-spouse-parents" value="0" /></td>
+                <td class="centered"><input type="radio" name="separation-from-spouse-parents" value="1" /></td>
+                <td class="centered"><input type="radio" name="separation-from-spouse-parents" value="2" /></td>
+                <td class="centered"><input type="radio" name="separation-from-spouse-parents" value="3" /></td>
+                <td class="centered"><input type="radio" name="separation-from-spouse-parents" value="4" /></td>
+              </tr>
+              <tr>
+                <td>Children or siblings:</td>
+                <td class="centered"><input type="radio" name="separation-from-children-ciblings" value="0" /></td>
+                <td class="centered"><input type="radio" name="separation-from-children-ciblings" value="1" /></td>
+                <td class="centered"><input type="radio" name="separation-from-children-ciblings" value="2" /></td>
+                <td class="centered"><input type="radio" name="separation-from-children-ciblings" value="3" /></td>
+                <td class="centered"><input type="radio" name="separation-from-children-ciblings" value="4" /></td>
+              </tr>
+              <tr>
+                <td>Other family:</td>
+                <td class="centered"><input type="radio" name="separation-from-otherfamily" value="0" /></td>
+                <td class="centered"><input type="radio" name="separation-from-otherfamily" value="1" /></td>
+                <td class="centered"><input type="radio" name="separation-from-otherfamily" value="2" /></td>
+                <td class="centered"><input type="radio" name="separation-from-otherfamily" value="3" /></td>
+                <td class="centered"><input type="radio" name="separation-from-otherfamily" value="4" /></td>
+              </tr>
+              <tr>
+                <td>Co-workers:</td>
+                <td class="centered"><input type="radio" name="separation-from-coworkers" value="0" /></td>
+                <td class="centered"><input type="radio" name="separation-from-coworkers" value="1" /></td>
+                <td class="centered"><input type="radio" name="separation-from-coworkers" value="2" /></td>
+                <td class="centered"><input type="radio" name="separation-from-coworkers" value="3" /></td>
+                <td class="centered"><input type="radio" name="separation-from-coworkers" value="4" /></td>
+              </tr>
+              <tr>
+                <td>Friends:</td>
+                <td class="centered"><input type="radio" name="separation-from-friends" value="0" /></td>
+                <td class="centered"><input type="radio" name="separation-from-friends" value="1" /></td>
+                <td class="centered"><input type="radio" name="separation-from-friends" value="2" /></td>
+                <td class="centered"><input type="radio" name="separation-from-friends" value="3" /></td>
+                <td class="centered"><input type="radio" name="separation-from-friends" value="4" /></td>
+              </tr>
+              <tr>
+                <td>Acquaintances:</td>
+                <td class="centered"><input type="radio" name="separation-from-acquaintances" value="0" /></td>
+                <td class="centered"><input type="radio" name="separation-from-acquaintances" value="1" /></td>
+                <td class="centered"><input type="radio" name="separation-from-acquaintances" value="2" /></td>
+                <td class="centered"><input type="radio" name="separation-from-acquaintances" value="3" /></td>
+                <td class="centered"><input type="radio" name="separation-from-acquaintances" value="4" /></td>
+              </tr>
+            </tbody>
+        </table>
+      </li>
+      <li class="question">How much pain does your anger inflict upon:
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tbody>
+            <tr>
+              <th></th>
+              <th class="centered">None</th>
+              <th class="centered">Slight</th>
+              <th class="centered">Significant</th>
+              <th class="centered">Intense</th>
+              <th class="centered">Devastating</th>
+            </tr>
+            <tr>
+              <td>Spouse or Parents:</td>
+              <td class="centered"><input type="radio" name="pain-upon-spouse-parents" value="0" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-spouse-parents" value="1" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-spouse-parents" value="2" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-spouse-parents" value="3" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-spouse-parents" value="4" /></td>
+            </tr>
+            <tr>
+              <td>Children or siblings:</td>
+              <td class="centered"><input type="radio" name="pain-upon-children-ciblings" value="0" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-children-ciblings" value="1" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-children-ciblings" value="2" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-children-ciblings" value="3" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-children-ciblings" value="4" /></td>
+            </tr>
+            <tr>
+              <td>Other family:</td>
+              <td class="centered"><input type="radio" name="pain-upon-otherfamily" value="0" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-otherfamily" value="1" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-otherfamily" value="2" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-otherfamily" value="3" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-otherfamily" value="4" /></td>
+            </tr>
+            <tr>
+              <td>Co-workers:</td>
+              <td class="centered"><input type="radio" name="pain-upon-coworkers" value="0" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-coworkers" value="1" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-coworkers" value="2" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-coworkers" value="3" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-coworkers" value="4" /></td>
+            </tr>
+            <tr>
+              <td>Friends:</td>
+              <td class="centered"><input type="radio" name="pain-upon-friends" value="0" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-friends" value="1" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-friends" value="2" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-friends" value="3" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-friends" value="4" /></td>
+            </tr>
+            <tr>
+              <td>Acquaintances:</td>
+              <td class="centered"><input type="radio" name="pain-upon-acquaintances" value="0" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-acquaintances" value="1" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-acquaintances" value="2" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-acquaintances" value="3" /></td>
+              <td class="centered"><input type="radio" name="pain-upon-acquaintances" value="4" /></td>
+            </tr>
+          </tbody>
+        </table>
+      </li>
+    </ol> 
+  </fieldset> 
+  <fieldset id="set-e" class="destruction-level">
+    <h2>E</h2>
+    <ol start="8"> 
+      <li class="question">Do you sometimes not understand why you get angry?
+        <ol class="inline">
+          <li>
+            <input id="sometimes-dont-understand-no" type="radio" value="0" name="sometimes-dont-understand" />
+            <label for="sometimes-dont-understand-no">No</label>
+          </li>
+          <li>
+            <input id="sometimes-dont-understand-yes" type="radio" value="1" name="sometimes-dont-understand" />
+            <label for="sometimes-dont-understand-yes">Yes</label>
+          </li>
+        </ol> 
+      </li>
+      <li class="question">Do you usually feel you are justified in your anger?
+        <ol class="inline">
+          <li>
+            <input id="usually-feel-justified-no" type="radio" value="0" name="usually-feel-justified" /> 
+            <label for="usually-feel-justified-no">No</label>
+          </li>
+          <li>
+            <input id="usually-feel-justified-yes" type="radio" value="1" name="usually-feel-justified" /> 
+            <label for="usually-feel-justified-yes">Yes</label>
+          </li>
+        </ol> 
+      </li>
+      <li class="question">Is your anger sometimes good?
+        <ol class="inline">
+          <li>
+            <input id="anger-sometimes-good-no" type="radio" value="0" name="anger-sometimes-good" />
+            <label for="anger-sometimes-good-no">No</label>
+          </li>
+          <li>
+            <input id="anger-sometimes-good-yes" type="radio" value="1" name="anger-sometimes-good" />
+            <label for="anger-sometimes-good-yes">Yes</label>
+          </li>
+        </ol> 
+      </li>
+      <li class="question">Do you know how God feels about your anger?...
+        <ol class="inline">
+          <li>
+            <input id="know-Gods-perspective-2" type="radio" value="2" name="know-Gods-perspective" />
+            <label for="know-Gods-perspective-3">Confident</label>
+          </li>
+          <li>
+            <input id="know-Gods-perspective-1" type="radio" value="1" name="know-Gods-perspective" />
+            <label for="know-Gods-perspective-2">Maybe</label>
+          </li>
+          <li>
+            <input id="know-Gods-perspective-0" type="radio" value="0" name="know-Gods-perspective" />
+            <label for="know-Gods-perspective-1">No</label>
+          </li>
+        </ol> 
+      </li>
+    </ol> 
+  </fieldset> 
+  <fieldset id="set-f">
+    <h2>F</h2>
+    <ol start="12"> 
+      <li class="question tried-how-hard">How hard have you tried to overcome anger?
+        <ol class="inline">
+          <li>
+            <input id="tried-how-hard-0" type="radio" value="0" name="tried-how-hard" />
+            <label for="tried-how-hard-0">None</label>
+          </li>
+          <li>
+            <input id="tried-how-hard-1" type="radio" value="1" name="tried-how-hard" />
+            <label for="tried-how-hard-1">Some</label>
+          </li>
+          <li>
+            <input id="tried-how-hard-2" type="radio" value="2" name="tried-how-hard" />
+            <label for="tried-how-hard-2">Significantly</label>
+          </li>
+          <li>
+            <input id="tried-how-hard-3" type="radio" value="3" name="tried-how-hard" />
+            <label for="tried-how-hard-3">Consistently</label>
+          </li>
+        </ol> 
+      </li>
+      <li class="question desire-to-be-free">How much do you want to overcome your anger?
+        <ol class="inline">
+          <li>
+            <input id="desire-to-be-free-0" type="radio" value="0" name="desire-to-be-free" />
+            <label for="desire-to-be-free-0">None</label>
+          </li>
+          <li>
+            <input id="desire-to-be-free-1" type="radio" value="1" name="desire-to-be-free" />
+            <label for="desire-to-be-free-1">Some</label>
+          </li>
+          <li>
+            <input id="desire-to-be-free-2" type="radio" value="2" name="desire-to-be-free" />
+            <label for="desire-to-be-free-2">Significantly</label>
+          </li>
+          <li>
+            <input id="desire-to-be-free-3" type="radio" value="3" name="desire-to-be-free" /> 
+            <label for="desire-to-be-free-3">Determined</label>
+          </li>
+        </ol> 
+      </li>
+      <li class="question how-much-hope">How much hope do you have for overcoming anger?
+        <ol class="inline">
+          <li>
+            <input id="how-much-hope-0" type="radio" value="0" name="how-much-hope" />
+            <label for="how-much-hope-0">None</label>
+          </li>
+          <li>
+            <input id="how-much-hope-1" type="radio" value="1" name="how-much-hope" />
+            <label for="how-much-hope-1">Some</label>
+          </li>
+          <li>
+            <input id="how-much-hope-2" type="radio" value="2" name="how-much-hope" />
+            <label for="how-much-hope-2">Significant</label>
+          </li>
+          <li>
+            <input id="how-much-hope-3" type="radio" value="3" name="how-much-hope" />
+            <label for="how-much-hope-3">Confident</label>
+          </li>
+        </ol> 
+      </li>
+    </ol>
+  </fieldset> 
+  <br style="margin: 1em 0;" /> 
+  <fieldset id="set-total"> 
+    <h2>Anger Quiz Score Totals</h2> 
+      
+    <ol class="h3" style="list-style: upper-alpha">
+      <li id="score-a">
+        <h3>Warning Signals</h3>
+        <p>For section A, no points were assigned for your responses. Take special note of the symptoms you listed:</p>
+        <ul class="your-score selected-symptoms">                                              
+          <li class="subscribe to-symptoms-sudden-explosions visible-if-true">You suddenly explode</li>
+          <li class="subscribe to-symptoms-sullen-silent-treatment visible-if-true">You give others a sullen, silent treatment</li> 
+          <li class="subscribe to-symptoms-raised-voice visible-if-true">You raise your voice (shouting, yelling, screaming)</li> 
+          <li class="subscribe to-symptoms-argue-without-listening visible-if-true">You argue without listening</li> 
+          <li class="subscribe to-symptoms-say-things-you-later-regret visible-if-true">You say things you later regret</li> 
+          <li class="subscribe to-symptoms-tense-face visible-if-true">You become tense in your jaw, face, or neck</li> 
+          <li class="subscribe to-symptoms-tone-of-voice visible-if-true">You take on a harsh, critical, or demeaning tone of voice</li> 
+          <li class="subscribe to-symptoms-become-irrational visible-if-true">You become irrational</li> 
+          <li class="subscribe to-symptoms-become-impatient visible-if-true">You become impatient</li> 
+          <li class="subscribe to-symptoms-become-frustrated visible-if-true">You become frustrated or irritated</li> 
+          <li class="subscribe to-symptoms-keep-records-of-wrongs visible-if-true">You keep records of wrongs, to later bring them back up</li>
+          <li class="subscribe to-any-symptoms-violent visible-if-true">You become violent 
+            <span class="subscribe to-symptoms-violent-toward-things visible-if-true">toward things</span>
+            <span class="subscribe to-all-symptoms-violent visible-if-true">or</span>
+            <span class="subscribe to-symptoms-violent-toward-people visible-if-true">toward people</span>
+          </li> 
+        </ul> 
+        <p>
+          These warning flags should remind you to back up and dial down.
+          Furthermore, when these signals show themselves, chances are that people around you are already
+          experiencing you as angry. Relationships are often damaged when you don&rsquo;t think you are angry.
+          (Read more on warning signs in Lesson 3 of <i>Uprooting Anger</i>.)
+        </p>
+        <p class="scripture">
+          God&rsquo;s word: <q>&ldquo;When you are angered, sin not.&rdquo;</q> 
+          <cite>(Eph 4:26)</cite>&mdash;(Read more on this verse in lesson 4 of <i>Uprooting Anger</i>.)
+        </p>
+      </li>
+      <li id="score-b">
+        <h3>Overall breadth and depth of anger in your life:</h3>
+        <div class="your-score">
+          <p>Your score: <span class="your-score subscribe to-sum-b"></span> out of 40.</p>
+          <p class="subscribe to-sum-b visible-if-lt-2">
+            You indicate a subnormal occurrence of anger. Are you honest with yourself about your level of anger?
+          </p>
+          <p class="subscribe to-sum-b visible-if-between-2-4">
+            You&rsquo;re doing well, but keep working on it to build stronger relationships.
+          </p>
+          <p class="subscribe to-sum-b visible-if-between-5-7">
+            If you value your relationships, getting help is advised.
+          </p>
+          <p class="subscribe to-sum-b visible-if-between-8-10">
+            You are hurting yourself and others more than you probably realize. You need help.
+          </p>
+          <p class="subscribe to-sum-b visible-if-gte-11">
+            You need help. You are self-destructing.
+          </p>
+          <p class="subscribe to-max-who-self visible-if-gte-2">The level of intensity of your anger toward <strong>yourself</strong> 
+            indicates that you need to deal 
+            with some issues such as guilt, forgiveness, pride, and too high expectations for yourself. <i>Uprooting Anger</i> 
+            has lessons that will help you get in touch with root issues.
+          </p>
+          <p class="subscribe to-max-who-close visible-if-gte-2">The level of intensity of your anger toward <strong>people 
+            close to you</strong> indicates that you probably need to deal with issues such as forgiveness, bitterness, high 
+            expectations, rights, or need to control. <i>Uprooting Anger</i> has lessons that will help you get in touch 
+            with these root issues as well as other possibilities.
+          </p>
+          <p class="subscribe to-max-who-other visible-if-gte-2">The level of intensity of your anger toward <strong>people who are 
+            not close to you</strong> indicates that you need to deal with issues such as self-centeredness, need for control, judgment, 
+            and high expectations. <i>Uprooting Anger</i> has lessons that will help you get in touch with these root issues as 
+            well as other possibilities.
+          </p>
+        </div>
+
+        <p>The more frequent and violent your anger (in actions, words, or silence), the more damage it causes yourself and 
+          others. Studies show that anger&mdash;expressed or suppressed&mdash;causes serious physical, psychological, and relational 
+          damage. Asking forgiveness and restoring relationships minimizes the destruction caused.
+        </p>
+        <p>Look for a pattern in your responses. When particular people frequently make you mad, or 
+          you are violent toward them, it is usually tied to unforgiveness, bitterness, or high 
+          expectations. (See lessons 11, 13, and 19 in <i>Uprooting Anger</i>).
+        </p>
+        <p class="scripture">God&rsquo;s word: <q>&ldquo;Let all bitterness and wrath and anger and clamor and slander be put away from you, 
+          along with all malice.&rdquo;</q> <cite>(Eph. 4:31)</cite>
+        </p>
+
+      </li>
+
+      <li id="score-c"><h3>Repairing the damage</h3>
+        <p>Section C is to factor in the importance of asking forgiveness when you have offended others through 
+          your anger. If you ask forgiveness for your anger, it minimizes the damage. Consequently, as scores were 
+          tallied for Section B, points were subtracted from the totals, if you received credit for asking 
+          forgiveness.
+        </p>
+        <p>Anger causes offense and hurts relationships. When you confess your wrong to those who witnessed your 
+          anger&mdash;without casting blame on others&mdash;and ask for forgiveness, it heals the hurts caused by 
+          anger and often restores the relationship.Any relationship that suffers from anger without 
+          experiencing forgiveness is in trouble. If you usually ask forgiveness, good for you. Strive to be 
+          consistent in order to strengthen your relationships.
+        </p>
+        <p class="scripture">God&rsquo;s word: <q>&ldquo;If possible, so far as it depends on you, be at peace with all men.&rdquo;</q>
+          <cite>(Rom. 12:18)</cite>
+        </p>
+        <p class="scripture">God&rsquo;s word: <q>&ldquo;If therefore you are presenting your offering at the altar, and there remember that your brother 
+          has something against you, leave your offering there before the altar, and go your way; first be 
+          reconciled to your brother, and then come and present your offering.&rdquo;</q> <cite>(Matt 5:23-24)</cite>
+        </p>
+      </li> 
+      <li id="score-d"><h3>Level of destruction in relationships</h3>
+        <div class="your-score">
+          <p>Your score: <span class="your-score subscribe to-sum-set-d"></span> out of 48.</p>
+          <p class="note">
+            (Forty-eight points indicates absolute, devastating damage in all 
+            relationships.)
+          </p>
+          <p class="subscribe to-max-set-d visible-if-lte-1">
+            You&rsquo;re doing well. Keep working to keep it that way or improve.
+          </p>
+          <p class="subscribe to-max-set-d visible-if-2">
+            If you desire healthy, lasting relationships, you need to find help to overcome anger.
+          </p>
+          <p class="subscribe to-max-set-d visible-if-gt-2">
+            Your anger is destroying people, relationships, and the physical and psychological health of yourself and those 
+            around you. It&rsquo;s time to seek help to uproot your anger.
+          </p>
+        </div>
+        <p>
+          When we hold onto anger, it destroys peace and joy in our own lives as well as in those around us, causing hurt and 
+          schisms, making it harder to live in harmony, more difficult to work together, and creating tension and friction 
+          over minor issues.
+        </p>
+
+
+        <p class="scripture">God&rsquo;s Word: Instead of causing strife and pain, <q>&ldquo;encourage one another, and build 
+          up one another.&rdquo;</q> <cite>(Th 5:11)</cite>
+        </p>
+        <p class="scripture">
+          God&rsquo;s Word: <q>&ldquo;But encourage one another day after day, as long as it is still called "Today," lest any 
+            one of you be hardened by the deceitfulness of sin.&rdquo;</q> 
+          <cite>(Heb 3:13)</cite>
+        </p>
+      </li>
+      <li id="score-e"><h3>Understanding of the nature of anger</h3>
+        <p>Points are not assigned for section E, but responses to your answers are given below.</p>
+        
+        <div class="numbered"><span class="number">8.</span> 
+          <p>Do you sometimes not understand why you get angry?</p>
+          <p>Anger springs from the heart, not the mind, so it is often difficult 
+          to understand what the root of our anger is. Uprooting Anger is a study of verses and incidents in the Bible that help 
+          us understand the different roots in our lives that lead us to respond in anger.</p>
+        </div>
+        
+        <p class="scripture">God&rsquo;s word: <q>&ldquo;The heart is more deceitful than all else and is desperately sick; Who can understand it?
+          I, the Lord, search the heart, I test the mind, Even to give to each man according to his ways, According to the results 
+          of his deeds.&rdquo;</q> <cite>(Jer 17:9-10)</cite>
+          We cannot understand our own hearts, but through His Word, God will reveal it to us so we can be free from the bondage 
+          of anger.
+        </p>
+
+        <div class="numbered"><span class="number">9&ndash;11.</span>
+          <p>Is your anger justified? Sometimes good? How does God feel about it?</p>
+          <p>God tells us, <q>&ldquo;Let all bitterness and wrath and anger 
+          and clamor and slander be put away from you, along with all malice&rdquo;</q> <cite>(Eph 4:31)</cite>. All anger is 
+          destructive and needs to be put away, even when the situation seems to justify anger. Uprooting Anger explores ways 
+          to deal with anger&mdash;even when there is cause. Lesson 2 looks at Jesus in the temple to see why it&rsquo;s ok for 
+          Jesus to be angry but not me.</p>
+        </div>
+        <p class="scripture">
+          God&rsquo;s Word: &ldquo;The anger of man does not achieve the righteousness of God.&rdquo; <cite>(James 1:20)</cite></p>
+
+        <p class="scripture">God&rsquo;s word: 
+          &ldquo;Cease from anger, and forsake wrath; do not fret&mdash;it only causes harm.
+          <cite>(Psalm 37:8)</cite>
+        </p>
+      </li>
+      <li id="score-f"><h3>Motivation level</h3>
+        <div class="numbered"><span class="number">12.</span>
+          <div class="your-score"><p>
+            You
+            <span class="subscribe to-max-tried-how-hard visible-if-0">have not tried</span>
+            <span class="subscribe to-max-tried-how-hard visible-if-1">have tried some</span>
+            <span class="subscribe to-max-tried-how-hard visible-if-2">have given significant effort</span>
+            <span class="subscribe to-max-tried-how-hard visible-if-3">have tried consistently</span>
+            to overcome anger.
+          </p></div>
+          </p>
+            Today is a new day. With God’s help and with application of His truths in your life, you can get freedom 
+            from anger. It is possible. It will take effort on your part, but freedom from anger will bring such peace 
+            and joy in your life and in your relationships that it is well worth the effort.
+          </p>
+        </div>
+
+        <div class="numbered"><span class="number">13.</span>
+          <div class="your-score"><p>
+            You 
+            <span class="subscribe to-desire-to-be-free visible-if-0">have no desire</span>
+            <span class="subscribe to-desire-to-be-free visible-if-1">have some desire</span>
+            <span class="subscribe to-desire-to-be-free visible-if-2">have significant desire</span>
+            <span class="subscribe to-desire-to-be-free visible-if-3">are determined</span>
+            to overcome anger.
+          </p></div>
+
+          <p>The likelihood of you overcoming anger is closely linked to how much you want to conquer it, how much you will commit
+          to the effort, and how much you are willing to let God work in your life. Many people have tried hard to stop being
+          angry and have failed because they went about it the wrong way. If you are less than determined, ask God to give you
+          the desire and determination to get free.</p>
+        </div>
+
+        <div class="numbered"><span class="number">14.</span>
+          <div class="your-score"><p>
+            You have 
+            <span class="subscribe to-max-how-much-hope visible-if-0">no</span>
+            <span class="subscribe to-max-how-much-hope visible-if-1">a little</span>
+            <span class="subscribe to-max-how-much-hope visible-if-2">significant</span>
+            <span class="subscribe to-max-how-much-hope visible-if-3">confident</span>
+            hope that you can overcome anger.
+          </p></div>
+          
+          <p>
+            It&rsquo;s hard to maintain hope when past efforts failed, but with God&rsquo;s help, the bondage of anger can be broken.
+            Uprooting Anger builds hope and shows how to attack the roots from which anger grows. &ldquo;My grace is sufficient for
+            you, for My strength is made perfect in weakness.&rdquo; (2 Cor. 12:6)
+          </p>
+          <p>
+            The likelihood of you overcoming anger is closely linked to how much you want to conquer it and how much you are
+            willing to let God work in your life. Many people have tried hard to stop being angry and have failed because they
+            went about it the wrong way.
+          </p>
+        </div>
+
+      </li>
+    </ol>
+  </fieldset>
+</form> 
+
+<ul class="next-steps">
+  <li><a href="/uprooting-anger/video/" title="">Watch a video</a> of someone who conquered anger after giving up all hope.</li>
+  <li><a href="/uprooting-anger/book/" title="">Learn more</a> about the book <a href="/uprooting-anger/book/" title=""><i>Uprooting Anger</i></a>.</li>
+  <li>
+    <a href="/uprooting-anger/book/" title="">Order <i>Uprooting Anger</i></a>.
+    <a href="http://www.amazon.com/DESARRAIGANDO-IRA-Spanish-Kay-Camenisch/dp/1612154352/" title="Desarraigando La Ira Order">Order <i>Desarraigando La Ira</i></a>
+  </li>
+</ul>
