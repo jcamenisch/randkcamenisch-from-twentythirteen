@@ -121,9 +121,7 @@
     <link href="http://feeds.feedburner.com/kaycamenisch" rel="alternate" title="RSS" type="application/rss+xml" />
 
 
-      <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/js/calculated-attributes.js"></script>
 
-	
     <link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
 
 
@@ -147,12 +145,6 @@
 
 
     <![endif]-->
-
-
-
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
-
-
 
     <?php wp_head(); ?>
 
@@ -320,6 +312,14 @@
 
 				<?php comments_template(); ?>
 
+				<? foreach (get_post_meta(get_the_ID(), 'js_file') as $js_file) { ?>
+				  <script type="text/javascript" src="<?= get_template_directory_uri() . "/js/$js_file" ?>"></script>
+				<? } ?>
+				<? foreach (get_post_meta(get_the_ID(), 'js') as $js) { ?>
+				  <script>
+				    <?= $js ?>
+				  </script>
+				<? } ?>
 			<?php endwhile; ?>
 
 
@@ -393,14 +393,9 @@
 
 
   <? wp_footer(); ?>
+  
 
 <script type="text/javascript">
-
-      $(function(){
-
-  $('body').CalculatedAttributes();
-
-});
 
       var _gaq = _gaq || [];
 
