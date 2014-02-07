@@ -81,10 +81,6 @@
         </div>
       </div>
     </div>
-    <? /* <r:if_field name="javascriptfile"> */ ?><script type="text/javascript" src="<? /* <r:field name="javascriptfile" /> */ ?>"></script><? /* </r:if_field> */ ?>
-    <? /* <r:if_content part="javascript"> */ ?><script type="text/javascript">
-      <? /* <r:content part="javascript" /> */ ?>
-    </script><? /* </r:if_content> */ ?>
   <? wp_footer(); ?>
 </body>
 </html>
