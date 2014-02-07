@@ -21,3 +21,8 @@ img.alignnone {
   margin: 0 0;
 }
 
+.post-meta {
+  margin-top: -20px;
+  color: #87989E;
+  font-style: italic;
+}
