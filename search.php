@@ -136,24 +136,24 @@
 
             <div class="content">
 
-		<?php if ( have_posts() ) : ?>
+    <?php if ( have_posts() ) : ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'randkcamenisch-twentythirteen' ), get_search_query() ); ?></h1>
-			</header>
+      <header class="page-header">
+        <h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'randkcamenisch-twentythirteen' ), get_search_query() ); ?></h1>
+      </header>
 
-			<?php /* The loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', get_post_format() ); ?>
-			<?php endwhile; ?>
+      <?php /* The loop */ ?>
+      <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'content', get_post_format() ); ?>
+      <?php endwhile; ?>
 
-			<?php twentythirteen_paging_nav(); ?>
+      <?php twentythirteen_paging_nav(); ?>
 
-		<?php else : ?>
-			<?php get_template_part( 'content', 'none' ); ?>
-		<?php endif; ?>
+    <?php else : ?>
+      <?php get_template_part( 'content', 'none' ); ?>
+    <?php endif; ?>
 
-		 </div>
+     </div>
 
             <? get_template_part('partials/sidebar'); ?>
 

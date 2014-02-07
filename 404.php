@@ -136,11 +136,11 @@
 
             <div class="content">
 
-					<h2><?php _e( 'Uh Oh', 'randkcamenisch-twentythirteen' ); ?></h2>
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'randkcamenisch-twentythirteen' ); ?></p>
+          <h2><?php _e( 'Uh Oh', 'randkcamenisch-twentythirteen' ); ?></h2>
+          <p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'randkcamenisch-twentythirteen' ); ?></p>
 
-					<?php get_search_form(); ?>
-				<div style="clear: both"></div>
+          <?php get_search_form(); ?>
+        <div style="clear: both"></div>
 
       </div>
       </div>

@@ -270,61 +270,61 @@
 
 
 
-			<?php /* The loop */ ?>
+      <?php /* The loop */ ?>
 
-			<?php while ( have_posts() ) : the_post(); ?>
-
-
-
-				<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-					<header class="entry-header">
-
-						<?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
-
-						<div class="entry-thumbnail">
-
-							<?php the_post_thumbnail(); ?>
-
-						</div>
-
-						<?php endif; ?>
+      <?php while ( have_posts() ) : the_post(); ?>
 
 
 
-						<h1 class="entry-title"><?php the_title(); ?></h1>
+        <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-					</header><!-- .entry-header -->
+          <header class="entry-header">
 
+            <?php if ( has_post_thumbnail() && ! post_password_required() ) : ?>
 
+            <div class="entry-thumbnail">
 
-					<div class="entry-content">
+              <?php the_post_thumbnail(); ?>
 
-						<?php the_content(); ?>
+            </div>
 
-						<?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'randkcamenisch-twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
-
-					</div>
-
-				</article><!-- #post -->
+            <?php endif; ?>
 
 
 
-				<?php comments_template(); ?>
+            <h1 class="entry-title"><?php the_title(); ?></h1>
 
-				<? foreach (get_post_meta(get_the_ID(), 'js_file') as $js_file) { ?>
-				  <script type="text/javascript" src="<?= get_template_directory_uri() . "/js/$js_file" ?>"></script>
-				<? } ?>
-				<? foreach (get_post_meta(get_the_ID(), 'js') as $js) { ?>
-				  <script>
-				    <?= $js ?>
-				  </script>
-				<? } ?>
-			<?php endwhile; ?>
+          </header><!-- .entry-header -->
 
 
 
-		</div>
+          <div class="entry-content">
+
+            <?php the_content(); ?>
+
+            <?php wp_link_pages( array( 'before' => '<div class="page-links"><span class="page-links-title">' . __( 'Pages:', 'randkcamenisch-twentythirteen' ) . '</span>', 'after' => '</div>', 'link_before' => '<span>', 'link_after' => '</span>' ) ); ?>
+
+          </div>
+
+        </article><!-- #post -->
+
+
+
+        <?php comments_template(); ?>
+
+        <? foreach (get_post_meta(get_the_ID(), 'js_file') as $js_file) { ?>
+          <script type="text/javascript" src="<?= get_template_directory_uri() . "/js/$js_file" ?>"></script>
+        <? } ?>
+        <? foreach (get_post_meta(get_the_ID(), 'js') as $js) { ?>
+          <script>
+            <?= $js ?>
+          </script>
+        <? } ?>
+      <?php endwhile; ?>
+
+
+
+    </div>
 
 
 
