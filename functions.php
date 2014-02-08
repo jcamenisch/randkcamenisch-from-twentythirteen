@@ -262,24 +262,40 @@ function twentythirteen_paging_nav() {
   global $wp_query;
 
   // Don't print empty markup if there's only one page.
-  if ( $wp_query->max_num_pages < 2 )
-    return;
+  if ( $wp_query->max_num_pages < 2 ) return;
+
   ?>
-  <nav class="navigation paging-navigation" role="navigation">
-    <h1 class="screen-reader-text"><?php _e( 'Posts navigation', 'randkcamenisch-twentythirteen' ); ?></h1>
-    <div class="nav-links">
+    <div class="pagination">
+      <?
+        $total_links = 6;
+        $current_page = $wp_query->query_vars['paged'] ? $wp_query->query_vars['paged'] : 1;
+        $first_page_link = max(1, $current_page - $total_links / 2);
+        $last_page_link = min(array($wp_query->max_num_pages, $current_page + $total_links / 2));
 
-      <?php if ( get_next_posts_link() ) : ?>
-      <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'randkcamenisch-twentythirteen' ) ); ?></div>
-      <?php endif; ?>
+        if ( get_previous_posts_link() ) {
+          ?> <span class="prev_page"><? previous_posts_link( __( '« Newer Posts' ) ); ?></span> <?
+        } else {
+          ?> <span class="disabled prev_page">« Newer Posts</span> <?
+        }
 
-      <?php if ( get_previous_posts_link() ) : ?>
-      <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'randkcamenisch-twentythirteen' ) ); ?></div>
-      <?php endif; ?>
-
-    </div><!-- .nav-links -->
-  </nav><!-- .navigation -->
-  <?php
+        $next_page_link = $first_page_link;
+        while ($next_page_link <= $last_page_link) {
+          if ($next_page_link != $current_page) {
+            ?> <a href="/blog/page/<?= $next_page_link ?>"><?= $next_page_link ?></a> <?
+          } else {
+            ?> <span class="current"><?= $next_page_link ?></span> <?
+          }
+          $next_page_link++;
+        }
+       
+        if ( get_next_posts_link() ) {
+          ?> <span class="next_page"><? next_posts_link( __( 'Older Posts »', 4 ) ); ?></span> <?
+        } else {
+          ?> <span class="disabled next_page">Older Posts »</span> <?
+        }
+      ?>
+    </div>
+  <?
 }
 endif;
 
