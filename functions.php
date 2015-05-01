@@ -608,3 +608,8 @@ if(function_exists("register_field_group"))
     'menu_order' => 0,
   ));
 }
+
+function custom_excerpt_more( $more ) {
+  return '…';
+}
+add_filter('excerpt_more', 'custom_excerpt_more');

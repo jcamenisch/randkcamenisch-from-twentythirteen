@@ -32,13 +32,9 @@
     </h2>
   <?php endif; ?>
 
-  <p class="post-meta">posted <?= the_date() ?> <? the_tags('under') ?></p>
+  <p class="post-meta">posted <?= the_date() ?> <? the_tags('under ') ?></p>
 
-  <?php if ( is_search() ) : // Only display Excerpts for Search ?>
-    <div class="entry-summary">
-      <?php the_excerpt(); ?>
-    </div>
-  <?php else : ?>
+  <?php if ( is_single() ) : ?>
     <?php the_content( __( 'Continue reading <span class="meta-nav">&rarr;</span>', 'randkcamenisch-twentythirteen' ) ); ?>
     <?php wp_link_pages( array(
             'before' => '<div class="page-links"><span class="page-links-title">' .
@@ -48,15 +44,15 @@
             'link_after' => '</span>'
           ) );
     ?>
+  <?php else : // Only display Excerpts for listings & search results ?>
+    <div class="entry-summary">
+      <?php the_excerpt(); ?><a href="<?php the_permalink(); ?>" rel="bookmark">continue reading »</a>
+    </div>
   <?php endif; ?>
 
-  <footer class="entry-meta">
-    <? if ( comments_open() && ! is_single() ) : ?>
-      <div class="comments-link">
-        <a href="<?php the_permalink(); ?>#disqus_thread" rel="bookmark">Leave a comment</a>
-      </div>
-    <? elseif ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
+  <? if ( is_single() && get_the_author_meta( 'description' ) && is_multi_author() ) : ?>
+    <footer class="entry-meta">
       <? get_template_part( 'author-bio' ); ?>
-    <? endif; ?>
-  </footer>
+    </footer>
+  <? endif; ?>
 </article>
