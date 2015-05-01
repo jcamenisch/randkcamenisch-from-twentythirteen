@@ -1,5 +1,6 @@
 @import url("reset.css");
 @import url("typography.css");
+@import url("perfecticons.css");
 
 body{width:100%;font-family:Georgia,Palatino,"Palatino Linotype",Times,Times New Roman,serif;color:#09232a;margin:0;text-align:center;line-height:1.5em;background:#606b71;font-size:16px}
 

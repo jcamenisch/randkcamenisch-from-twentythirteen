@@ -61,6 +61,11 @@
           <? _e( 'Menu', 'twentythirteen' ); ?>
           <? wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
         </div>
+        <ul class="soc">
+          <li><a class="soc-rss" href="http://feeds.feedburner.com/kaycamenisch"></a></li>
+          <li><a class="soc-email1" href="http://feedburner.google.com/fb/a/mailverify?uri=kaycamenisch&loc=en_US"></a></li>
+          <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/KayCamenisch"></a></li>
+        </ul>
       </div>
       <div class="page">
         <div class="main">
