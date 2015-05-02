@@ -54,15 +54,22 @@
           </h1>
         </div>
       </div>
-      <div class="nav-wrapper">
-        <div class="nav">
-          <? get_template_part('partials/home_link_navigation'); ?>
-          <? /* <r:find url="/"> */ ?><? get_template_part('partials/main_menu'); ?><? /* </r:find> */ ?>
+      <div class="nav-band">
+        <div class="nav-wrapper">
+          <div class="nav">
+            <? get_template_part('partials/home_link_navigation'); ?>
+            <? /* <r:find url="/"> */ ?><? get_template_part('partials/main_menu'); ?><? /* </r:find> */ ?>
 
-          <?/* From twentythirteen's index.php */?>
-          <a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
-          <? _e( 'Menu', 'twentythirteen' ); ?>
-          <? wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+            <?/* From twentythirteen's index.php */?>
+            <a class="screen-reader-text skip-link" href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentythirteen' ); ?>"><?php _e( 'Skip to content', 'twentythirteen' ); ?></a>
+            <? _e( 'Menu', 'twentythirteen' ); ?>
+            <? wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
+          </div>
+          <ul class="soc">
+            <li><a class="soc-rss" href="http://feeds.feedburner.com/kaycamenisch"></a></li>
+            <li><a class="soc-email1" href="http://feedburner.google.com/fb/a/mailverify?uri=kaycamenisch&loc=en_US"></a></li>
+            <li><a class="soc-twitter soc-icon-last" href="https://twitter.com/KayCamenisch"></a></li>
+          </ul>
         </div>
       </div>
       <div class="page">
