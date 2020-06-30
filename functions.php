@@ -287,7 +287,7 @@ function twentythirteen_paging_nav() {
           }
           $next_page_link++;
         }
-       
+
         if ( get_next_posts_link() ) {
           ?> <span class="next_page"><? next_posts_link( __( 'Older Posts »', 4 ) ); ?></span> <?
         } else {
